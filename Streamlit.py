@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 import pandas as pd
 import datetime
 import altair as alt
+from PIL import Image
 
 with open(r'Python/config.yml') as file:
     configs = yaml.load(file)
@@ -106,6 +107,9 @@ state_filter = st.sidebar.selectbox("Select state you are interested in", ('All'
 month_filter = st.sidebar.selectbox("Select month are you interested in?", ('All',  'April', 'May', 'June'))
 party_filter = st.sidebar.selectbox("Select party you are interested in?", ('All', 'AFD', 'CDU', 'CSU', 'FDP',
                                                                           'Grünen', 'Linke', 'SPD', 'other'))
+popularity_filter = st.sidebar.selectbox("Popularity measure: favorites or retweets?", ('Favorites',  'Retweets'))
+popularity_filter = popularity_filter.lower()
+
 if state_filter != 'All':
     data = data[data.state == state_filter]
 
@@ -190,33 +194,47 @@ st.write(subchart_overall)
 if party_filter != 'All':
     data = data[data.party == party_filter]
 
+
+
 try:
-    highest = data.favorites.max()
-    text = data[data.favorites == highest].text.iloc[0]
-    date = data[data.favorites == highest].tweet_date.iloc[0]
-    favorites = data[data.favorites == highest].favorites.iloc[0]
-    user_id = data[data.favorites == highest].user_id.iloc[0]
+    highest = data[popularity_filter].max()
+    text = data[data[popularity_filter] == highest].text.iloc[0]
+    date = data[data[popularity_filter] == highest].tweet_date.iloc[0]
+    favorites = data[data[popularity_filter] == highest][popularity_filter].iloc[0]
+    user_id = data[data[popularity_filter] == highest].user_id.iloc[0]
 except:
     highest = text = date = favorites = ''
 
 # per followers count:
 try:
-    highest_2 = (data.favorites / data.followers_count).max()
-    text_2 = data[(data.favorites / data.followers_count) == highest_2].text.iloc[0]
-    date_2 = data[(data.favorites / data.followers_count) == highest_2].tweet_date.iloc[0]
-    favorites_2 = data[(data.favorites / data.followers_count) == highest_2].favorites.iloc[0]
-    user_id_2 = data[(data.favorites / data.followers_count) == highest_2].user_id.iloc[0]
+    highest_2 = (data[popularity_filter] / data.followers_count).max()
+    text_2 = data[(data[popularity_filter] / data.followers_count) == highest_2].text.iloc[0]
+    date_2 = data[(data[popularity_filter] / data.followers_count) == highest_2].tweet_date.iloc[0]
+    favorites_2 = data[(data[popularity_filter] / data.followers_count) == highest_2][popularity_filter].iloc[0]
+    user_id_2 = data[(data[popularity_filter] / data.followers_count) == highest_2].user_id.iloc[0]
 except:
     highest_2 = text_2 = date_2 = favorites_2 = ''
 
 
+
 st.title("Most favorite/retweeted tweets")
 
-st.write('### Most favorite tweet:')
-st.write(f'{text}')
-st.write(f'Tweeted by {configs["party_politician"][int(user_id)][2]} on {date}, with a total of {favorites} favorites.')
+st.write(f'### Top tweet (in terms of {popularity_filter}):')
+st.write(f'{text}  - tweeted by {configs["party_politician"][int(user_id)][2]} on {date}, with a total of {favorites} {popularity_filter}.')
+#st.write(f'Tweeted by {configs["party_politician"][int(user_id)][2]} on {date}, with a total of {favorites} {popularity_filter}.')
 
-st.write('### Most favorite tweet per number of followers:')
-st.write(f'{text_2}')
-st.write(f'Tweeted by {configs["party_politician"][int(user_id_2)][2]} on {date_2}, with a total of {favorites_2} favorites per followers.')
+st.write(f'### Top tweet (in terms of {popularity_filter}) per number of followers:')
+st.write(f'{text_2}  - tweeted by {configs["party_politician"][int(user_id_2)][2]} on {date_2}, with a total of {favorites_2} {popularity_filter} per followers.')
+#st.write(f'Tweeted by {configs["party_politician"][int(user_id_2)][2]} on {date_2}, with a total of {favorites_2} {popularity_filter} per followers.')
+
+
+topic_dist_1 = Image.open('favs.png')
+topic_dist_2 = Image.open('retweets.png')
+
+if popularity_filter == 'favorites':
+    st.write(f'### Topic distribution of most favorite tweet per party:')
+    st.image(topic_dist_1)
+else:
+    st.write(f'### Topic distribution of most retweeted tweet per party:')
+    st.image(topic_dist_2)
 
