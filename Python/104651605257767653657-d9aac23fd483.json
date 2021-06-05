@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trollhunters",
+  "private_key_id": "d9aac23fd4831d09640343fd4ecb7ffe0c198d1e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrKWEvxUYS9PSX\n9GU9lvQy8mEanZ80KQZGed1yzgacMw1/SUZvNqjgIimTMVCevA+OsRdkyGobFrjB\npNn4Ux05nRcQREc5JnJ/bdtwttJtR7ilBpF3NQ23qfrwOWZl+ayXNQNYwqnNbrQp\nJic6xk+CYFQ12mT7/1n7RykyF1QQHj2UTV1KmbcHfZfIgwvF5F1pOXKmVcNwMRak\nNigpUS5wWZr0Eyp242N598aJo7flIJ3C7liCtgAg3NhvNxZDU96zh9qyMFdI+4lC\n53YzM8j/7zykjL9iLQPefUwiAXEbcK6PSxZuptWWlNscuRLjEhHsAIxb6wwtISg0\nLrO7l/axAgMBAAECggEAHFgKIsvHlqiPX6GGaWxXzJ8EMxDilhPsGNwh7prND+1J\nYSh8fDrAPPuTSG98cwjgB6huYA9rOMiquFCJEv0KhCmuMdCovb9O6yjBU9lGn/em\nTVe425WCy8Ufi8vpl94AdXq/LuHvlhgsx/qsOOixrnyuvUtI+U0YNMscOJIR5ugh\ntSru7o2kAliISrYebCe09wnCQi1PJurlxtWSqucSLR1DzhSywytqbTwfAvX8EQvd\nCPrFQg4oF6gJ7gOxST7Ibe6WWDSPLEoW32PD84tUWt9cZxklTZwjnW8nJcPKDOU0\nJWGgAOQKkIL8eNNB2yiTrgOOYdkGenceiYPfFRL59QKBgQDaS0ITzm9oY0Lnzk9I\njyZo/hTjf6x2AS8Tlb+kBEj/O5ca/6G09Bv0AB8qSiQZIoQGVdjFHITdO/8CIPby\nkCRTXL9pnytexODUfi1Rlh/F0lIs5yKXKoKFWoAY4S4ER8JY0BVGwsyY2HK07P4Q\nGvt5EzR2esSkEGEf2ZIpWPntPQKBgQDIufoAD20vW4vVn+5ftIlQb/YcwpjsnwDd\nAjlc7Gh3AU2IRH2cXT1aH/SFgb2xT9NqRooUYppESDNTYGGdwRDgCMgFulvC98Op\nKFOGaPnzEwMs63nYhIfLzrSHLVfg++q+fVa+U9Y9df4hQspeXCkkNJ2hYNGrTGcI\nf4qa6QXuhQKBgAMca3aozIGqWHvBPvQDxkJczKNpYGXWInue+Lo3rWqlyMODvSQ9\nDmDt14PcxqLtEQCeHJbCj0ov3rSDD8HpN/tQKRIySIXzPFkK605sW0uQccdeC+on\nmvCXl5fDLcq10xk87fCyOgQ7oXbeochM+iSBl4/QtBi6ewffK+wW7ojpAoGBAJW0\nDr5owvflAP+MTg5W6Wpydk2w3LjtRYmPlRS2xJqtABQ3cK9j4tQKrSW9Q6qwbG8A\nuQ7HE2MFrjHq2iL70QglxHhxKurYOrc4ekLunCwr69xeqvtOrLDWM1H2AWqst8Dm\nXgGJKWmhTK2l0KRbe9ui2kV3nihxzQ5LgSZT0La5AoGAa50BPksnZcYCudiqRoxl\nDXCM6j6QAT2+0oXCLDaZ2K9qiLWB5HrsF25X4ROpkmg/AG6v7YP4CDEn/ekI4avA\n6Aapfvme9LYe/1flAvEIdd1npi3UUkQ07e/XMycg9Idth/PSuovEYq1xXgdCTv5O\nRQjk58W79ZA2leASFBWlmHU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bgse-masters-twitter-2021@trollhunters.iam.gserviceaccount.com",
+  "client_id": "104651605257767653657",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bgse-masters-twitter-2021%40trollhunters.iam.gserviceaccount.com"
+}

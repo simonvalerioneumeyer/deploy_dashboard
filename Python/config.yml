@@ -1,0 +1,349 @@
+ip_address: '3.140.248.246'
+port: '3306'
+password: 'seb_1_bes'
+username: 'bes'
+#GOOGLE_APPLICATION_CREDENTIALS: ${'GOOGLE_APPLICATION_CREDENTIALS'}  # before hand in: substitute with os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+columns:
+    - 'screen_name'
+    - 'user_id'
+    - 'user_role'
+    - 'party'
+    - 'tweet_date'
+    - 'text'
+    - 'preprocessed_text'
+    - 'hashtags'
+    - 'favorite_count'
+    - 'retweet_count'
+    - 'reply_count'
+    - 'quote_count'
+    - 'location'
+    - 'latitude'
+    - 'longitude'
+    - 'radius_km'
+    - 'followers_count'
+    - 'friends_count'
+    - 'statuses_count'
+    - 'state'
+    - 'east_dummy'
+    - 'west_east_berlin'
+    - 'user_mentioned'
+
+target_mention_id:
+    - 20429858
+    - 26458162
+    - 844081278
+    - 14553288
+    - 44101578
+    - 21107582
+    - 39475170
+    - 14341194
+    - 47565855
+    - 188007231
+    - 1640269597
+    - 117395471
+    - 42425722
+    - 65607107
+    - 182642896
+    - 52745493
+    - 41074066
+    - 841427060
+    - 3131209413
+    - 352544190
+    - 1963121671
+    - 20057426
+    - 17675072
+    - 626287930
+    - 19108766
+    - 2320519958
+    - 47375691
+    - 122104353
+    - 833398209053605888
+    - 242658778
+    - 140821364
+    - 1040160799208161280
+    - 299650387
+    - 1059395748289232896 #
+    - 2764750474 #
+    - 38150247 #
+    - 569832889 #
+    - 1425265488 #
+    - 485751594 #
+    - 28066013 #
+    - 793778228 #
+    - 1015986511039356929 #
+    - 2715759820 #
+    - 1627905570 #
+    - 2831352701 #
+    - 835541664 #
+    - 19751955
+    - 393264968
+    - 21392844
+    - 2179010672
+    - 47620601
+    - 934029228886065152
+    - 710201540116652033
+    - 797137333820784640
+    - 706536761279782912
+
+state_dict:
+    48.135124: 'Bayern'
+    52.520008: 'Berlin'
+    48.775845: 'Baden-Württemberg'
+    51.227741: 'Nordrhein-Westfalen'
+    53.551086: 'Hamburg'
+    53.0758196: 'Bremen'
+    54.3227085: 'Schleswig-Holstein'
+    49.234362: 'Saarland'
+    51.0493286: 'Sachsen'
+    50.9777974: 'Thüringen'
+    50.0820384: 'Hessen'
+    50.0012314: 'Rheinland-Pfalz'
+    52.1315889: 'Sachsen-Anhalt'
+    52.4009309: 'Brandenburg'
+    53.6288297: 'Mecklenburg-Vorpommern'
+    52.3744779: 'Niedersachsen'
+    0.0: 'Germany'
+
+east:
+    - 'Brandenburg'
+    - 'Mecklenburg-Vorpommern'
+    - 'Sachsen'
+    - 'Sachsen-Anhalt'
+    - 'Thüringen'
+
+party_politician:
+    20429858:
+        - 'party'
+        - 'CDU'
+        - 'CDU'
+    26458162:
+        - 'party'
+        - 'SPD'
+        - 'SPD Deutschland'
+    844081278:
+        - 'party'
+        - 'AFD'
+        - 'AFD'
+    14553288:
+        - 'party'
+        - 'Bündnis90/Die Grünen'
+        - 'Bündnis90/Die Grünen'
+    44101578:
+        - 'party'
+        - 'Die Linke'
+        - 'Die Linke'
+    21107582:
+        - 'party'
+        - 'CSU'
+        - 'CSU'
+    39475170:
+        - 'party'
+        - 'FDP'
+        - 'FDP'
+    14341194:
+        - 'party'
+        - 'other'
+        - 'Die Piratenpartei'
+    47565855:
+        - 'party'
+        - 'other'
+        - 'Freie Wähler Landtag'
+    188007231:
+        - 'party'
+        - 'other'
+        - 'NDP'
+    1640269597:
+        - 'party'
+        - 'other'
+        - 'Tierschutzpartei'
+    117395471:
+        - 'party'
+        - 'other'
+        - 'Ökologisch demokratische Partei'
+    42425722:
+        - 'party'
+        - 'other'
+        - 'Die Republikaner'
+    65607107:
+        - 'party'
+        - 'other'
+        - 'Die PARTEI'
+    182642896:
+        - 'party'
+        - 'other'
+        - 'Bürgerbewegung pro Deutschland'
+    52745493:
+        - 'party'
+        - 'other'
+        - 'Die Bayernpartei'
+    41074066:
+        - 'party'
+        - 'other'
+        - 'Die Vernunftspartei'
+    841427060:
+        - 'party'
+        - 'other'
+        - 'Marxistisch-Leninistische Partei Deutschlands'
+    3131209413:
+        - 'party'
+        - 'other'
+        - 'Bündnis C (Christen für Deutschland)'
+    352544190:
+        - 'party'
+        - 'other'
+        - 'Bündnis für Innovation und Gerechtigkeit'
+    1963121671:
+        - 'party'
+        - 'other'
+        - 'Deutsche Mitte'
+    20057426:
+        - 'politician'
+        - 'CDU'
+        - 'Angela Merkel'
+    17675072:
+        - 'politician'
+        - 'SPD'
+        - 'Martin Schulz'
+    626287930:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Katrin Göring-Eckardt'
+    19108766:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Cem Özdemir'
+    2320519958:
+        - 'politician'
+        - 'Die Linke'
+        - 'Dietmar Bartsch'
+    47375691:
+        - 'politician'
+        - 'Die Linke'
+        - 'Sarah Wagenknecht'
+    122104353:
+        - 'politician'
+        - 'FDP'
+        - 'Christian Lindner'
+    833398209053605888:
+        - 'politician'
+        - 'AFD'
+        - 'Alice Weidel'
+    242658778:
+        - 'politician'
+        - 'CDU'
+        - 'Peter Altmeier'
+    140821364:
+        - 'politician'
+        - 'CSU'
+        - 'Dorothee Bär'
+    1040160799208161280:
+        - 'politician'
+        - 'CDU'
+        - 'Norbert Röttgen'
+    299650387:
+        - 'politician'
+        - 'CDU'
+        - 'Jens Spahn'
+    1059395748289232896:
+        - 'politician'
+        - 'CDU'
+        - 'Friedrich Merz'
+    2764750474:
+        - 'politician'
+        - 'SPD'
+        - 'Kevin Kühnert'
+    38150247:
+        - 'politician'
+        - 'SPD'
+        - 'Olaf Scholz'
+    569832889:
+        - 'politician'
+        - 'SPD'
+        - 'Sigmar Gabriel'
+    1425265488:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Renate Künast'
+    485751594:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Jürgen Trittin'
+    28066013:
+        - 'politician'
+        - 'Die Linke'
+        - 'Katja Kipping'
+    793778228:
+        - 'politician'
+        - 'CSU'
+        - 'Markus Söder'
+    1015986511039356929:
+        - 'politician'
+        - 'SPD'
+        - 'Andreas Bovenschulte'
+    2715759820:
+        - 'politician'
+        - 'SPD'
+        - 'Peter Tschentscher'
+    1627905570:
+        - 'politician'
+        - 'SPD'
+        - 'Manuela Schwesig'
+    2831352701:
+        - 'politician'
+        - 'SPD'
+        - 'Stephan Weil'
+    835541664:
+        - 'politician'
+        - 'CDU'
+        - 'Armin Laschet'
+    19751955:
+        - 'politician'
+        - 'CDU'
+        - 'Tobias Hans'
+    393264968:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Winfried Kretschmann'
+    21392844:
+        - 'politician'
+        - 'Die Linke'
+        - 'Bodo Ramelow'
+    2179010672:
+        - 'politician'
+        - 'Bündnis90/Die Grünen'
+        - 'Annalena Baerbock'
+    47620601:
+        - 'politician'
+        - 'CDU'
+        - 'Annegret Kramp-Karrenbauer'
+    934029228886065152:
+        - 'politician'
+        - 'Die Linke'
+        - 'Amira Mohamed Ali'
+    710201540116652033:
+        - 'politician'
+        - 'AFD'
+        - 'Jörg Meuthen'
+    797137333820784640:
+        - 'politician'
+        - 'AFD'
+        - 'Tino Chrupalla'
+    706536761279782912:
+        - 'politician'
+        - 'SPD'
+        - 'Norbert Walter Borjans'
+
+party_color_dict:
+    SPD: 'red'
+    CDU: 'black'
+    Linke: 'purple'
+    other: 'orange'
+    FDP: 'yellow'
+    Grünen: 'green'
+    AFD: 'blue'
+    CSU: 'grey'
+
+months_dict:
+    April: 4
+    May: 5
+    June: 6
