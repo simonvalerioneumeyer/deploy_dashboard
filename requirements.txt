@@ -53,8 +53,6 @@ dash-html-components==1.1.1
 dash-renderer==1.8.3
 dash-table==4.11.0
 dask==2.11.0
-de-core-news-md==3.0.0
-de-core-news-sm==3.0.0
 decorator==4.4.1
 defusedxml==0.6.0
 diff-match-patch==20181111
@@ -62,7 +60,6 @@ distlib==0.3.1
 distributed==2.11.0
 docopt==0.6.2
 docutils==0.16
-en-core-web-sm==3.0.0
 entrypoints==0.3
 et-xmlfile==1.0.1
 execnet==1.7.1
