@@ -119,7 +119,6 @@ jupyter==1.0.0
 jupyter-client==5.3.4
 jupyter-console==6.1.0
 jupyter-contrib-core==0.3.3
-jupyter-contrib-nbextensions==0.5.1
 jupyter-core==4.6.1
 jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.6
@@ -293,7 +292,6 @@ watchdog==0.10.2
 wcwidth==0.1.8
 webencodings==0.5.1
 Werkzeug==1.0.0
-widgetsnbextension==3.5.1
 wrapt==1.11.2
 wurlitzer==2.0.0
 xgboost==1.2.1
